@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+/* Container Styling */
+/* General Styling for the Form */
+
+.container-fluid {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f9fc;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image img {
+  width: 100%;
+  height: 720px;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form {
+  background-color: rbga(255,255,255,0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form h1 {
+  color: #333;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.form form {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form .row {
+  margin-bottom: 1rem;
+}
+
+.form input,
+.form textarea,
+.form select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+    color: #495057;
+
+}
+
+.form label {
+  color: #495057;
+  font-weight: bold;
+}
+
+.form button {
+background-image: linear-gradient(to left, #48c6ef 0%, #6f86d6 100%);  
+color: #fff;
+border: none;
+padding: 0.5rem 1rem;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.form button:hover {
+background-image: linear-gradient(to left, #83cee7 0%, #98a7dc 100%);
+}
+
+@media only screen and (max-width:1200px) {
+   
+.button button{
+    margin-bottom: 10px;
+}
+.main-container{
+    background: transparent;
+}
+.form{
+      background-color: rbga(255,255,255,0.2);
+}
+
+.App{
+    width: 500px;
+}
+
+.form input{
+    background-color: #D5DBDB;
+}
+
+
+.image{
+        display: none;     
+    }
+}
+@media only screen and (max-width:1385px) {
+   
+.button button{
+    margin-bottom: 10px;
+}
 }

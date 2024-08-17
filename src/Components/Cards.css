@@ -1,0 +1,60 @@
+.modal-container h1 {
+  text-align: center;
+  color: black;
+  border-bottom: 1px solid black;
+  margin-bottom: 1.5rem;
+}
+
+.modal-container p {
+  font-size: 1.1rem;
+  color: black;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+.modal-container b {
+  font-weight: bold;
+  color: black;
+}
+
+/* Cards.css */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  width: 600px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+.card-button{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
