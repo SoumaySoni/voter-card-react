@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Voter Card Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple, interactive React application that generates a voter card based on user input. It includes client-side form validation, modal-based preview, and responsive layout. Built using React and Bootstrap for a modern and adaptive user interface.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧠 Features & Techniques
 
-### `npm start`
+- **React Functional Components** with `useState` for local state management
+- **Form validation using React-Bootstrap**'s [`Form`](https://react-bootstrap.netlify.app/docs/forms/overview/) and [`InputGroup`](https://react-bootstrap.netlify.app/docs/forms/input-group/)
+- **Modal implementation** with conditional rendering and event propagation control
+- **Responsive design** using Bootstrap's grid system (`Row`, `Col`) and custom CSS
+- **Image import and rendering** inside components using Webpack asset handling
+- **Font Icons** using [`react-icons`](https://react-icons.github.io/react-icons/)
+- **Bootstrap** styling via [`react-bootstrap`](https://react-bootstrap.github.io/) and [`bootstrap`](https://getbootstrap.com/)
+- Uses `react-icons`'s [`IoMdClose`](https://react-icons.github.io/react-icons/icons/io/#iomeclose) for the modal close icon
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Technologies & Libraries
 
-### `npm test`
+- [React](https://react.dev/) – UI framework
+- [React Bootstrap](https://react-bootstrap.github.io/) – UI component library
+- [Bootstrap](https://getbootstrap.com/) – Grid and layout framework
+- [React Icons](https://react-icons.github.io/react-icons/) – Icon library
+- [Google Fonts – Poppins](https://fonts.google.com/specimen/Poppins) – Primary font used in styling
+- Webpack asset bundling via Create React App
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📂 Directory Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+public/
+src/
+├── App.js
+├── App.css
+├── Components/
+│   ├── VoterForm.js
+│   ├── Cards.js
+│   └── Cards.css
+├── images/
+│   └── votingman.webp
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `Components/`: Contains the form logic (`VoterForm.js`) and modal (`Cards.js`)
+- `images/`: Assets used inside the UI
+- `App.js`: Entry point that loads the main form
+- `App.css`: Custom project-wide styles
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 How to Run
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository  
+   `git clone <your-repo-url>`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Navigate to the project folder  
+   `cd voter-card-react`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Install dependencies  
+   `npm install`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Start the development server  
+   `npm start`
 
-## Learn More
+App will be running at `http://localhost:3000`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📝 License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed for educational and demo purposes only.
